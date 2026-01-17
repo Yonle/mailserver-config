@@ -1,0 +1,8 @@
+SPF is basically just a policy.
+
+You put this TXT record in your root domain:
+
+  v=spf1 mx ip4:203.0.113.5 ip6:2001:db8::5 -all
+
+ip4 field determines which ip is allowed to send using THIS DOMAIN
+the same goes to ip6 but for ipv6.
