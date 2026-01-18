@@ -1,0 +1,13 @@
+DMARC is basically the final verifier after you setup SPF and DKIM.
+
+To put it simply, It does stuff when SPF and DKIM are not valid,
+All done to avoid another kind of domain spoofing. (jeez, even DKIM wasn't enough?)
+
+Generally, DMARC wasn't actually needed. Unless necessary, You just put this DNS record
+into your domain, Specifically, _dmarc subdomain containing a TXT record that writes:
+
+	v=DMARC1; p=reject; rua=mailto:dmarc@waltuh.cyou
+
+and then just apply it, Say, on _dmarc.waltuh.cyou
+
+That's basically it.
