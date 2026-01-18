@@ -1,4 +1,7 @@
 insert into virtuals (email, destination) values ('root', 'yonle@waltuh.cyou');
+insert into virtuals (email, destination) values ('postmaster@waltuh.cyou', 'root');
+insert into virtuals (email, destination) values ('webmaster@waltuh.cyou', 'root');
+insert into virtuals (email, destination) values ('abuse@waltuh.cyou', 'root');
 insert into virtuals (email, destination) values ('yonle@waltuh.cyou', 'vmail');
 
 insert into users (username, email) values ('yonle@waltuh.cyou', 'yonle@waltuh.cyou');
