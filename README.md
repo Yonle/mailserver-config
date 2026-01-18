@@ -19,6 +19,10 @@ and finally
 
 ## pre-setup
 
+before anything else, ensure that you have set your rDNS properly.
+
+now that being said,
+
 1. make `vmail` user and it's dir
 
 ```
@@ -40,6 +44,7 @@ sudo chmod -R 700 /var/vmail
 ├── README.md
 ├── SPF.txt
 ├── DMARC.txt
+├── GMAIL.txt
 ├── etc
 │   ├── dovecot
 │   │   ├── dovecot.conf

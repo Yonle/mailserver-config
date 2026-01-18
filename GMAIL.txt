@@ -1,0 +1,25 @@
+The Gmail Problem.
+
+You have set up SPF, DKIM, and DMARC properly, And these three gives the result of "PASS",
+Yet, still marked as spam. How impressive was that?
+
+If you are wondering why Gmail puts any email from your mail server into "Spam" folder,
+That's because, It assumes that everything other than "verified" ones are spammers.
+
+Yeah. Zero trust.
+
+So, To verify it, You basically go to https://gmail.com/postmaster,
+Login into your gmail account, Put your email address here,
+
+It will ask you to put a TXT record in your domain root record just to verify the domain.
+So, Go put it. The record looked similarly like this:
+
+	google-site-verification=xxxxx-xxxxxx....
+
+And apply it, then press [Verify].
+
+That's basically it.
+
+Then you   w a i t .
+
+Till when? I don't know. Even other Email admins are confused too.
