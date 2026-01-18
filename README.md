@@ -39,6 +39,7 @@ sudo chmod -R 700 /var/vmail
 ```
 ├── README.md
 ├── SPF.txt
+├── DMARC.txt
 ├── etc
 │   ├── dovecot
 │   │   ├── dovecot.conf
