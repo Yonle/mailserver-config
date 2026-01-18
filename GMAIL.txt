@@ -8,7 +8,7 @@ That's because, It assumes that everything other than "verified" ones are spamme
 
 Yeah. Zero trust.
 
-So, To verify it, You basically go to https://gmail.com/postmaster,
+So, You basically go to https://gmail.com/postmaster,
 Login into your gmail account, Put your email address here,
 
 It will ask you to put a TXT record in your domain root record just to verify the domain.
@@ -21,5 +21,8 @@ And apply it, then press [Verify].
 That's basically it.
 
 Then you   w a i t .
-
 Till when? I don't know. Even other Email admins are confused too.
+
+How to make it fast?
+Tell Gmail user or send email to your gmail, and [Report as not spam],
+And wish Gmail didn't have a beef of your "Dear my babe" mail.
