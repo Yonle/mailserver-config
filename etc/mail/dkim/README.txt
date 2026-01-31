@@ -11,7 +11,9 @@ Now, Generate the TXT record string by running the following:
 Now make a TXT record in <selector>._domainkey.waltuh.cyou.
 Replace the <selector> with anything. It could be "mail" so mail._domainkey.waltuh.cyou
 
-Then, Put the previously generated TXT record for the DKIM into this domain
+Then, Put the previously generated TXT record for the DKIM into this domain.
+It should look similarly like this:
+	v=DKIM1;k=ed25519;p=tM22KunOkYfEtLzvaUQQcwjUGw8c6hg/v24gIa46oSY=
 
 So, in your smtpd.conf:
 
