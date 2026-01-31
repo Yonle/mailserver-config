@@ -6,7 +6,7 @@ To generate a dkim key, Do the following:
 
 Now, Generate the TXT record string by running the following:
 
-	printf "v=DKIM1;k=ed25519;p=%s" "$(openssl pkey -outform DER -pubout -in /etc/mail/dkim/private.ed25519.key | tail -c +13 | openssl base64)"
+	printf "v=DKIM1;k=ed25519;p=%s" "$(openssl pkey -outform DER -pubout -in /etc/mail/dkim/waltuh.cyou-ed25519.key | tail -c +13 | openssl base64)"
 
 Now make a TXT record in <selector>._domainkey.waltuh.cyou.
 Replace the <selector> with anything. It could be "mail" so mail._domainkey.waltuh.cyou
